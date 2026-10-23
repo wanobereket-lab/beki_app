@@ -1,85 +1,165 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Berekets Profile</title>
+    <title>My Website</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Bereket Wano</h1>
-        <p>Web Developer | Student </p>
-    </header>
 
-    <hr>
+        <h1>Bereket's Website</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
 
     <main>
 
-        <section>
+        <section id="home">
+
+            <h2>Welcome 👋</h2>
+
+            <p>
+                Welcome to my website.
+                I am learning web development and building
+                projects every day.
+            </p>
+
+        </section>
+
+
+        <section id="about">
+
             <h2>About Me</h2>
 
             <p>
-                Hello! My name is Bereket. I am learning web development
-                and working toward becoming a professional developer.
+                I am a developer who enjoys creating websites
+                and learning new technologies.
             </p>
 
-            <p>
-                I enjoy building websites, learning new technologies,
-                and solving programming problems.
-            </p>
         </section>
 
-        <section>
-            <h2>My Skills</h2>
 
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+        <section id="projects">
 
-        <section>
-            <h2>My Goals</h2>
+            <h2>My Projects</h2>
 
-            <ol>
-                <li>Become a professional developer</li>
-                <li>Build real-world projects</li>
-                <li>Contribute to open-source projects</li>
-                <li>Get my first developer job</li>
-            </ol>
-        </section>
+            <article>
 
-        <section>
-            <h2>Contact Me</h2>
+                <h3>Personal Profile</h3>
 
-            <p>
-                Email:
-                <a href="mailto:wanobereket@email.com">
-                
+                <p>
+                    My first HTML project.
+                </p>
+
+                <a href="#">
+                    View Project
                 </a>
-            </p>
 
-            <p>
-                GitHub:
-                <a href="https://github.com/" target="_blank">
-                    My GitHub
+            </article>
+
+
+            <article>
+
+                <h3>Future Project</h3>
+
+                <p>
+                    More projects are coming soon.
+                </p>
+
+                <a href="#">
+                    View Project
                 </a>
-            </p>
+
+            </article>
+
+        </section>
+
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <form>
+
+                <label for="name">
+                    Name
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                >
+
+                <br><br>
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                >
+
+                <br><br>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your message">
+                </textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
         </section>
 
     </main>
 
-    <hr>
 
     <footer>
-        <p>© 2026 Bereket Wano</p>
+
+        <p>
+            © 2026 Bereket Wano.
+            All rights reserved.
+        </p>
+
     </footer>
 
 </body>
+
 </html>

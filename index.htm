@@ -1,152 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Modern Navbar</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - JavaScript Basics</title>
 </head>
-
-
 <body>
 
-    <header>
+    <h1>JavaScript Basics</h1>
 
-        <nav class="navbar">
+    <h2>Welcome to my JavaScript journey!</h2>
 
-            <a href="#" class="logo">
-                BEREKET<span>.</span>
-            </a>
+    <p id="output"></p>
 
-
-            <button
-                class="menu-button"
-                id="menuButton"
-                aria-label="Open navigation menu"
-            >
-                ☰
-            </button>
-
-
-            <ul class="nav-links" id="navLinks">
-
-                <li>
-                    <a href="#home">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#about">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#services">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#projects">
-                        Projects
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contact">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-
-    <main>
-
-        <section id="home">
-
-            <h1>
-                Modern Navigation
-            </h1>
-
-            <p>
-                Resize your browser to test the responsive menu.
-            </p>
-
-        </section>
-
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Welcome to my website.</p>
-        </section>
-
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>Web development and design.</p>
-        </section>
-
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>My latest projects.</p>
-        </section>
-
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Let's work together.</p>
-        </section>
-
-    </main>
-
+    <button onclick="showMessage()">Click Me</button>
 
     <script>
+        // Variables
+        let name = "Bereket";
+        let age = 22;
+        let isLearning = true;
 
-        const menuButton =
-            document.getElementById("menuButton");
+        // Display variables
+        console.log(name);
+        console.log(age);
+        console.log(isLearning);
 
-        const navLinks =
-            document.getElementById("navLinks");
+        // Function
+        function greet() {
+            return "Hello, my name is " + name;
+        }
 
+        // Condition
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are under 18.");
+        }
 
-        menuButton.addEventListener("click", function () {
+        // Array
+        let skills = ["HTML", "CSS", "JavaScript"];
 
-            navLinks.classList.toggle("active");
+        console.log(skills);
 
-        });
+        // Loop
+        for (let i = 0; i < skills.length; i++) {
+            console.log(skills[i]);
+        }
 
-
-        document
-            .querySelectorAll(".nav-links a")
-            .forEach(function (link) {
-
-                link.addEventListener("click", function () {
-
-                    navLinks.classList.remove("active");
-
-                });
-
-            });
-
+        // Button function
+        function showMessage() {
+            document.getElementById("output").textContent =
+                greet() + ". I am learning JavaScript!";
+        }
     </script>
 
 </body>
-
 </html>

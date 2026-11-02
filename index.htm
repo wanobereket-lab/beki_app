@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 6 - JavaScript Basics</title>
+    <title>Day 7 - Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>JavaScript Basics</h1>
+    <div class="calculator">
 
-    <h2>Welcome to my JavaScript journey!</h2>
+        <h1>My Calculator</h1>
 
-    <p id="output"></p>
+        <input type="number" id="num1" placeholder="First number">
 
-    <button onclick="showMessage()">Click Me</button>
+        <input type="number" id="num2" placeholder="Second number">
 
-    <script>
-        // Variables
-        let name = "Bereket";
-        let age = 22;
-        let isLearning = true;
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
 
-        // Display variables
-        console.log(name);
-        console.log(age);
-        console.log(isLearning);
+        <h2 id="result">Result: 0</h2>
 
-        // Function
-        function greet() {
-            return "Hello, my name is " + name;
-        }
+        <button class="clear" onclick="clearCalculator()">
+            Clear
+        </button>
 
-        // Condition
-        if (age >= 18) {
-            console.log("You are an adult.");
-        } else {
-            console.log("You are under 18.");
-        }
+    </div>
 
-        // Array
-        let skills = ["HTML", "CSS", "JavaScript"];
-
-        console.log(skills);
-
-        // Loop
-        for (let i = 0; i < skills.length; i++) {
-            console.log(skills[i]);
-        }
-
-        // Button function
-        function showMessage() {
-            document.getElementById("output").textContent =
-                greet() + ". I am learning JavaScript!";
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>

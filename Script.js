@@ -49,4 +49,4 @@ function clearCalculator() {
     document.getElementById("num2").value = "";
 
     document.getElementById("result").textContent = "Result: 0";
-}
+} 

@@ -1,52 +1,43 @@
-function calculate(operator) {
+let count = 0;
 
-    let num1 = Number(document.getElementById("num1").value);
+const countDisplay = document.getElementById("count");
 
-    let num2 = Number(document.getElementById("num2").value);
+const increaseButton = document.getElementById("increase");
 
-    let result;
+const decreaseButton = document.getElementById("decrease");
 
-    if (
-        document.getElementById("num1").value === "" ||
-        document.getElementById("num2").value === ""
-    ) {
-        alert("Please enter both numbers.");
-        return;
-    }
+const resetButton = document.getElementById("reset");
 
-    switch (operator) {
 
-        case "+":
-            result = num1 + num2;
-            break;
+function updateDisplay() {
 
-        case "-":
-            result = num1 - num2;
-            break;
+    countDisplay.textContent = count;
 
-        case "*":
-            result = num1 * num2;
-            break;
-
-        case "/":
-            if (num2 === 0) {
-                alert("Cannot divide by zero!");
-                return;
-            }
-
-            result = num1 / num2;
-            break;
-    }
-
-    document.getElementById("result").textContent =
-        "Result: " + result;
 }
 
-function clearCalculator() {
 
-    document.getElementById("num1").value = "";
+increaseButton.addEventListener("click", function() {
 
-    document.getElementById("num2").value = "";
+    count++;
 
-    document.getElementById("result").textContent = "Result: 0";
-} 
+    updateDisplay();
+
+});
+
+
+decreaseButton.addEventListener("click", function() {
+
+    count--;
+
+    updateDisplay();
+
+});
+
+
+resetButton.addEventListener("click", function() {
+
+    count = 0;
+
+    updateDisplay();
+
+});

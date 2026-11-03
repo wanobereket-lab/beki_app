@@ -3,34 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 7 - Calculator</title>
+    <title>Day 8 - Counter App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="calculator">
+    <div class="container">
 
-        <h1>My Calculator</h1>
+        <h1>Counter App</h1>
 
-        <input type="number" id="num1" placeholder="First number">
-
-        <input type="number" id="num2" placeholder="Second number">
+        <h2 id="count">0</h2>
 
         <div class="buttons">
-            <button onclick="calculate('+')">+</button>
-            <button onclick="calculate('-')">-</button>
-            <button onclick="calculate('*')">×</button>
-            <button onclick="calculate('/')">÷</button>
+
+            <button id="decrease">- Decrease</button>
+
+            <button id="reset">Reset</button>
+
+            <button id="increase">+ Increase</button>
+
         </div>
 
-        <h2 id="result">Result: 0</h2>
-
-        <button class="clear" onclick="clearCalculator()">
-            Clear
-        </button>
+        <p>Made by Bereket Wano</p>
 
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>

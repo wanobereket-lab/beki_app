@@ -1,43 +1,46 @@
-let count = 0;
+function updateClock() {
 
-const countDisplay = document.getElementById("count");
+    const now = new Date();
 
-const increaseButton = document.getElementById("increase");
+    let hours = now.getHours();
 
-const decreaseButton = document.getElementById("decrease");
+    let minutes = now.getMinutes();
 
-const resetButton = document.getElementById("reset");
+    let seconds = now.getSeconds();
 
 
-function updateDisplay() {
+    // Add zero before single digits
 
-    countDisplay.textContent = count;
+    hours = String(hours).padStart(2, "0");
+
+    minutes = String(minutes).padStart(2, "0");
+
+    seconds = String(seconds).padStart(2, "0");
+
+
+    // Display time
+
+    document.getElementById("clock").textContent =
+        `${hours}:${minutes}:${seconds}`;
+
+
+    // Display date
+
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString("en-US", options);
 
 }
 
 
-increaseButton.addEventListener("click", function() {
+// Update clock every second
 
-    count++;
+updateClock();
 
-    updateDisplay();
-
-});
-
-
-decreaseButton.addEventListener("click", function() {
-
-    count--;
-
-    updateDisplay();
-
-});
-
-
-resetButton.addEventListener("click", function() {
-
-    count = 0;
-
-    updateDisplay();
-
-});
+setInterval(updateClock, 1000);

@@ -607,3 +607,52 @@ footer {
     }
 
 }
+
+/* My Learning Journey Feature */
+.journey {
+  padding: 80px 8%;
+  text-align: center;
+}
+.journey-container {
+  max-width: 850px;
+  margin: auto;
+}
+.journey-intro {
+  color: #b8b8c8;
+  margin: 15px 0 30px;
+}
+.journey-card {
+  background: #17172b;
+  border: 1px solid #383858;
+  border-radius: 18px;
+  padding: 35px;
+  text-align: left;
+}
+.journey-status {
+  color: #a78bfa;
+  font-weight: bold;
+}
+.learning-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+.learning-skills span {
+  background: #292944;
+  color: #fff;
+  padding: 9px 15px;
+  border-radius: 20px;
+}
+.journey-button {
+  display: inline-block;
+  background: #7c3aed;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.journey-button:hover {
+  background: #6d28d9;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Bereket Wano, an aspiring web developer.">
+    <title>About Me | Bereket Wano</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-page {
+            padding-bottom: 90px;
+            padding-top: 72px;
+        }
+
+        .about-hero {
+            align-items: center;
+            display: grid;
+            gap: 64px;
+            grid-template-columns: 1.15fr 0.85fr;
+            margin-bottom: 70px;
+        }
+
+        .about-eyebrow {
+            color: var(--coral);
+            font-size: 0.76rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+        }
+
+        .about-hero h1 {
+            font-size: clamp(2.7rem, 6vw, 4.8rem);
+            margin: 14px 0 20px;
+        }
+
+        .about-hero h1 span {
+            color: var(--coral);
+        }
+
+        .about-lead,
+        .about-copy p {
+            color: var(--muted);
+            font-size: 1.02rem;
+        }
+
+        .about-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .about-mark {
+            align-items: center;
+            aspect-ratio: 1;
+            background: var(--lavender);
+            border: 12px solid var(--white);
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            color: var(--coral-dark);
+            display: flex;
+            font-size: clamp(5rem, 12vw, 9rem);
+            font-weight: 900;
+            justify-content: center;
+            justify-self: center;
+            max-width: 330px;
+            width: 100%;
+        }
+
+        .about-details {
+            background: var(--white);
+            border: 1px solid var(--line);
+            display: grid;
+            gap: 52px;
+            grid-template-columns: 1fr 0.8fr;
+            padding: 38px;
+        }
+
+        .about-details h2 {
+            font-size: 1.65rem;
+            margin-bottom: 18px;
+        }
+
+        .about-copy p + p {
+            margin-top: 14px;
+        }
+
+        .learning-list {
+            display: grid;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .learning-list li {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            padding: 14px 16px;
+        }
+
+        .learning-list strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .learning-list span {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .about-stats-row {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 24px;
+        }
+
+        .about-stat {
+            background: var(--paper);
+            border: 1px solid var(--line);
+            padding: 18px 12px;
+            text-align: center;
+        }
+
+        .about-stat strong {
+            color: var(--coral);
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        .about-stat span {
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        .about-next {
+            background: var(--ink);
+            color: var(--white);
+            margin-top: 28px;
+            padding: 30px;
+        }
+
+        .about-next h2 {
+            margin-bottom: 10px;
+        }
+
+        .about-next p {
+            color: #c8cbd2;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 760px) {
+            .about-page {
+                padding-top: 50px;
+            }
+
+            .about-hero,
+            .about-details {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero {
+                gap: 36px;
+            }
+
+            .about-mark {
+                max-width: 240px;
+            }
+
+            .about-details {
+                gap: 34px;
+                padding: 26px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-stats-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a class="logo" href="```html.html#home">BEREKET<span>.</span></a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="```html.html#home">Home</a></li>
+                    <li><a href="```html.html#projects">Projects</a></li>
+                    <li><a href="```html.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page container">
+        <section class="about-hero" aria-labelledby="about-title">
+            <div>
+                <p class="about-eyebrow">A LITTLE ABOUT ME</p>
+                <h1 id="about-title">Hello, I'm <span>Bereket.</span></h1>
+                <p class="about-lead">I'm an aspiring web developer who enjoys learning how websites work and turning ideas into useful digital experiences.</p>
+                <div class="about-actions">
+                    <a class="btn primary-btn" href="```html.html#projects">See My Projects</a>
+                    <a class="btn secondary-btn" href="```html.html#contact">Get in Touch</a>
+                </div>
+            </div>
+            <div class="about-mark" aria-label="B for Bereket">B</div>
+        </section>
+
+        <section class="about-details" aria-label="About Bereket and current learning">
+            <div class="about-copy">
+                <h2>Who I Am</h2>
+                <p>My name is Bereket Wano. I'm passionate about technology, programming, and creative problem-solving. I like building websites that are clear, responsive, and easy to use.</p>
+                <p>I'm developing my skills step by step and practicing by making projects. My long-term goal is to become a full-stack developer and build useful digital products.</p>
+
+                <div class="about-stats-row" aria-label="A few facts">
+                    <div class="about-stat"><strong>10+</strong><span>Learning projects</span></div>
+                    <div class="about-stat"><strong>40</strong><span>Day challenge</span></div>
+                    <div class="about-stat"><strong>100%</strong><span>Ready to learn</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h2>What I'm Learning</h2>
+                <ul class="learning-list">
+                    <li><strong>HTML</strong><span>Structuring clear, accessible web pages.</span></li>
+                    <li><strong>CSS</strong><span>Creating responsive layouts and visual designs.</span></li>
+                    <li><strong>JavaScript</strong><span>Adding useful interactions to websites.</span></li>
+                    <li><strong>Git &amp; GitHub</strong><span>Tracking changes and sharing my work.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-next" aria-labelledby="next-title">
+            <h2 id="next-title">I'm still growing as a developer.</h2>
+            <p>This portfolio is a work in progress. I'm continuing to learn, improve my projects, and add more of my work.</p>
+            <a class="btn primary-btn" href="```html.html#contact">Let's Connect</a>
+        </section>
+    </main>
+</body>
+</html>
